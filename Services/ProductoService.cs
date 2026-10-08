@@ -17,4 +17,10 @@ public class ProductoService
     {
         return NombreValido(nombre) && PrecioValido(precio);
     }
+
+    // RF-04: Consultar disponibilidad de stock
+    public bool HayStock(int stock)
+    {
+        return stock > 0;
+    }
 }
